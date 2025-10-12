@@ -5,7 +5,7 @@
 - **Panel Font •** [Ubuntu Mono Nerd Font](https://archlinux.org/packages/extra/any/ttf-ubuntu-mono-nerd/) + [Noto Sans Mono CJK TC](https://archlinux.org/packages/extra/any/noto-fonts-cjk/)
 - **Notification •** [dunst](https://github.com/dunst-project/dunst)
 - **Clipboard Manager •** [cliphist](https://github.com/sentriz/cliphist)
-- **Wallpaper Engine •** [swaybg](https://github.com/swaywm/swaybg) + [swww (for overview)](https://github.com/LGFae/swww)
+- **Wallpaper Engine •** [swaybg](https://github.com/swaywm/swaybg) + [swww](https://github.com/LGFae/swww) (for overview)
 - **Idle Daemon •** [swayidle](https://github.com/swaywm/swayidle)
 - **Lock Screen •** [swaylock](https://github.com/swaywm/swaylock)
 - **Logout Menu •** [wlogout](https://github.com/ArtsyMacaw/wlogout)
