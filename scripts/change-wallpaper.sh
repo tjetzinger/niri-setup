@@ -10,6 +10,7 @@ fi
 images=$(fd . --base-directory "$wallpaper_dir" -x file {} | grep -oP '^.+: \w+ image' | cut -d ':' -f 1 | sort)
 if [ -z "$images" ]; then
   echo "[ERROR] no image file found. place your wallpapers in $wallpaper_dir."
+  sleep 2
   exit 1
 fi
 image="$wallpaper_dir/$(echo "$images" | gum choose --header 'choose your wallpaper: ')"
