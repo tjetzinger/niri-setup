@@ -1,6 +1,5 @@
 - **Window Manager •** [niri](https://github.com/YaLTeR/niri)
 - **Launcher •** [Fuzzel](https://codeberg.org/dnkl/fuzzel)
-- **Switcher •** [niriswitcher](https://github.com/isaksamsten/niriswitcher)
 - **Panel •** [Waybar](https://github.com/Alexays/Waybar)
 - **Panel Font •** [Ubuntu Mono Nerd Font](https://archlinux.org/packages/extra/any/ttf-ubuntu-mono-nerd/) + [Noto Sans Mono CJK TC](https://archlinux.org/packages/extra/any/noto-fonts-cjk/)
 - **Notification •** [dunst](https://github.com/dunst-project/dunst)
@@ -21,17 +20,17 @@
 
 # Screenshots
 
-![screenshot1](https://raw.githubusercontent.com/hengtseChou/Niri/refs/heads/main/.github/assets/screenshots/screenshot1.png)
+![screenshot1](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot1.png)
 
-![screenshot2](https://raw.githubusercontent.com/hengtseChou/Niri/refs/heads/main/.github/assets/screenshots/screenshot2.png)
+![screenshot2](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot2.png)
 
-![screenshot3](https://raw.githubusercontent.com/hengtseChou/Niri/refs/heads/main/.github/assets/screenshots/screenshot3.png)
+![screenshot3](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot3.png)
 
-![screenshot4](https://raw.githubusercontent.com/hengtseChou/Niri/refs/heads/main/.github/assets/screenshots/screenshot4.png)
+![screenshot4](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot4.png)
 
-![screenshot5](https://raw.githubusercontent.com/hengtseChou/Niri/refs/heads/main/.github/assets/screenshots/screenshot5.png)
+![screenshot5](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot5.png)
 
-![screenshot6](https://raw.githubusercontent.com/hengtseChou/Niri/refs/heads/main/.github/assets/screenshots/screenshot6.png)
+![screenshot6](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot6.png)
 
 # Features
 
@@ -47,8 +46,8 @@
 # Installation
 
 ```
-git clone https://github.com/hengtseChou/niri.git
-cd niri
+git clone https://github.com/acaibowlz/niri-setup.git
+cd niri-setup
 ./setup.sh
 ```
 
@@ -57,7 +56,7 @@ The script will install packages required for this setup and symlink to the corr
 > [!IMPORTANT]
 > The install script will only work on Arch Linux and its derivatives.
 
-For the dotfiles of the following programs, please refer to [my dotfiles repo](https://github.com/hengtseChou/dotfiles).
+For the dotfiles of the following programs, please refer to [my dotfiles repo](https://github.com/acaibowlz/dotfiles).
 
 - `fastfetch`
 - `fontconfig`
@@ -127,7 +126,6 @@ For the dotfiles of the following programs, please refer to [my dotfiles repo](h
 | <kbd>Super</kbd> + <kbd>BracketRight</kbd>             | Consume from/expel to the column on the right                            |
 | <kbd>Super</kbd> + <kbd>Comma</kbd>                    | Consume window from the right </br>into the bottom of the focused column |
 | <kbd>Super</kbd> + <kbd>Period</kbd>                   | Expel the bottom window from </br>the focused column to the right        |
-| <kbd>Alt</kbd> + <kbd>Tab</kbd>                        | Switch between windows                                                   |
 
 ## Workspaces
 
