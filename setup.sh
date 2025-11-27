@@ -45,6 +45,7 @@ if [ "$SKIP_INSTALL" = false ]; then
     niri
     niriswitcher
     pamixer
+    power-profiles-daemon
     polkit-gnome
     pwvucontrol
     starship
@@ -64,7 +65,7 @@ if [ -d "$HOME/.config/niri" ]; then
   read -p "[WARN] niri config file exists. do you want to overwrite it? (Y/n): " overwrite
   overwrite=${overwrite:-Y}
   if [[ $overwrite =~ ^[Yy]$ ]]; then
-    ln -sf $config_folder/niri $HOME/.config
+    ln -sf $config_folder/niri/config.kdl $HOME/.config/niri/config.kdl
   else
     echo "[INFO] aborting"
     exit 1
