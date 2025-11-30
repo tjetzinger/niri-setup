@@ -32,10 +32,12 @@
 
 ![screenshot6](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot6.png)
 
+![screenshot7](https://raw.githubusercontent.com/acaibowlz/niri-setup/refs/heads/main/.github/assets/screenshots/screenshot7.png)
+
 # Features
 
 > [!NOTE]
-> This niri configuration is up to date to: [niri v25.08](https://github.com/YaLTeR/niri/releases/tag/v25.08)
+> This niri configuration is up to date to: [niri v25.08](https://github.com/YaLTeR/niri/releases/tag/v25.11)
 
 - Empower niri with waybar, fuzzel, dunst, swaylock, and more - A full experience!
 - Idle time and power profile picker available as waybar widgets and fuzzel menus
@@ -126,6 +128,7 @@ For the dotfiles of the following programs, please refer to [my dotfiles repo](h
 | <kbd>Super</kbd> + <kbd>BracketRight</kbd>             | Consume from/expel to the column on the right                            |
 | <kbd>Super</kbd> + <kbd>Comma</kbd>                    | Consume window from the right </br>into the bottom of the focused column |
 | <kbd>Super</kbd> + <kbd>Period</kbd>                   | Expel the bottom window from </br>the focused column to the right        |
+| <kbd>Alt</kbd> + <kbd>Tab</kbd>                        | Switch between recent windows                                            |
 
 ## Workspaces
 
