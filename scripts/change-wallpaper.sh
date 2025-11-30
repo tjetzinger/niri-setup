@@ -7,7 +7,7 @@ export GUM_CHOOSE_CURSOR_FOREGROUND="#758A9B"
 if [ ! -d "$wallpaper_dir" ]; then
   mkdir -p "$wallpaper_dir"
 fi
-images=$(fd . --base-directory "$wallpaper_dir" -x file {} | grep -oP '^.+: \w+ image' | cut -d ':' -f 1 | sort)
+images=$(fd . --base-directory "$wallpaper_dir" | grep -e ".jpg" -e ".png" | sort)
 if [ -z "$images" ]; then
   echo "[ERROR] No image file found"
   echo "[INFO] Place your wallpapers in $wallpaper_dir"

@@ -72,7 +72,9 @@ if [ -d "$HOME/.config/niri" ]; then
   fi
 fi
 
-sed -i "s|\$NIRICONF|$config_folder|g" $(realpath "$config_folder/niri/config.kdl")
+sed -i "s|\$NIRICONF|$config_folder|g" $(realpath "$config_folder/niri/spawn-at-startup.kdl")
+sed -i "s|\$NIRICONF|$config_folder|g" $(realpath "$config_folder/niri/wallpapers.kdl")
+sed -i "s|\$NIRICONF|$config_folder|g" $(realpath "$config_folder/niri/binds.kdl")
 sed -i "s|\$NIRICONF|$config_folder|g" $(realpath "$config_folder/scripts/change-idle-time.sh")
 sed -i "s|\$NIRICONF|$config_folder|g" $(realpath "$config_folder/scripts/change-power-profile.sh")
 sed -i "s|\$NIRICONF|$config_folder|g" $(realpath "$config_folder/scripts/change-wallpaper.sh")
