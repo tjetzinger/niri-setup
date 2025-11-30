@@ -34,9 +34,9 @@ output "HDMI-A-1" {
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
     transform "normal"
     // left
-    // position x=-1920 y=0
+    position x=-1920 y=0
     // right
-    position x=1920 y=0
+    // position x=1920 y=0
     // top
     // the value would be based on the connected monitor
     //position x=0 y=-1080
@@ -101,7 +101,6 @@ layout {
 
 // startup processes
 spawn-sh-at-startup "udiskie"
-spawn-sh-at-startup "niriswitcher"
 spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "waybar -c $NIRICONF/waybar/config -s $NIRICONF/waybar/style.css"
@@ -109,8 +108,8 @@ spawn-sh-at-startup "dunst -conf $NIRICONF/dunst/dunstrc"
 spawn-sh-at-startup "pkill swayidle; echo '10 minutes' > /tmp/idle-time; $NIRICONF/scripts/swayidle.sh"
 
 // workspace background and backdrop
-spawn-sh-at-startup "swww-daemon & swww img $NIRICONF/wallpapers/backdrop.png"
-spawn-sh-at-startup "swaybg -i $NIRICONF/wallpapers/workspace.png -m fill -c '#30404E'"
+spawn-sh-at-startup "swww-daemon & swww img $NIRICONF/wallpapers/backdrop.jpg"
+spawn-sh-at-startup "swaybg -i $NIRICONF/wallpapers/workspace.jpg -m fill -c '#30404E'"
 layer-rule {
     match namespace="^swww-daemon$"
     place-within-backdrop true
@@ -197,7 +196,6 @@ binds {
     Mod+BracketRight     { consume-or-expel-window-right; }
     Mod+Comma            { consume-window-into-column; }
     Mod+Period           { expel-window-from-column; }
-    Alt+Tab repeat=false { spawn-sh "pkill -USR1 niriswitcher"; }
 
     // Workspaces
     Mod+Page_Down      { focus-workspace-down; }
