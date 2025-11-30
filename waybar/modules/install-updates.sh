@@ -5,7 +5,6 @@ sleep 0.1
 
 paru
 
-notify-send "Update complete"
 echo ""
 echo "[INFO] OK"
-sleep 2
+read -n 1 -s -r -p "[INFO] Press any key to finish..."
