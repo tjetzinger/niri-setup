@@ -37,7 +37,7 @@
 # Features
 
 > [!NOTE]
-> This niri configuration is up to date to: [niri v25.08](https://github.com/YaLTeR/niri/releases/tag/v25.11)
+> This niri configuration is up to date to: [niri v25.11](https://github.com/YaLTeR/niri/releases/tag/v25.11)
 
 - Empower niri with waybar, fuzzel, dunst, swaylock, and more - A full experience!
 - Idle time and power profile picker available as waybar widgets and fuzzel menus
