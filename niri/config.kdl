@@ -96,7 +96,6 @@ layout {
         bottom 0
     }
     background-color "transparent"
-
 }
 
 // startup processes
@@ -109,7 +108,7 @@ spawn-sh-at-startup "pkill swayidle; echo '10 minutes' > /tmp/idle-time; $NIRICO
 
 // workspace background and backdrop
 spawn-sh-at-startup "swww-daemon & swww img $NIRICONF/wallpapers/backdrop.jpg"
-spawn-sh-at-startup "swaybg -i $NIRICONF/wallpapers/workspace.jpg -m fill -c '#30404E'"
+spawn-sh-at-startup "swaybg -i $NIRICONF/wallpapers/workspace.jpg -m fill -c '#010102'"
 layer-rule {
     match namespace="^swww-daemon$"
     place-within-backdrop true
@@ -225,4 +224,9 @@ screenshot-path "~/Pictures/Screenshots/Screenshot From %Y-%m-%d %H-%M-%S.png"
 prefer-no-csd
 hotkey-overlay {
     skip-at-startup
+}
+gestures {
+    hot-corners {
+        off
+    }
 }
