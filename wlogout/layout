@@ -10,7 +10,7 @@
 }
 {
     "label" : "logout",
-    "action" : "pkill niri",
+    "action" : "niri msg action quit --skip-confirmation",
     "text" : "logout"
 }
 {
@@ -20,6 +20,6 @@
 }
 {
     "label" : "lock",
-    "action" : "hyprlock",
+    "action" : "$HOME/.config/niri-setup/scripts/swaylock.sh",
     "text" : "lock"
 }

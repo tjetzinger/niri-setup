@@ -6,7 +6,6 @@
 output "eDP-1" {
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
     mode "2880x1800@90"
-    scale 1.5
     transform "normal"
     position x=0 y=0
 }
