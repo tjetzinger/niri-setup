@@ -2,7 +2,6 @@
 swaylock \
   --clock \
   --screenshots \
-  --daemonize \
   --ignore-empty-password \
   --font "Ubuntu Bold" \
   --indicator \
