@@ -16,8 +16,8 @@ binds {
     // Backlight and Audio
     XF86MonBrightnessUp   allow-when-locked=true { spawn-sh "brightnessctl set +5%" ; }
     XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl set 5%-" ; }
-    XF86AudioRaiseVolume  allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"; }
-    XF86AudioLowerVolume  allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
+    XF86AudioRaiseVolume  allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01+"; }
+    XF86AudioLowerVolume  allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01-"; }
     XF86AudioMute         allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioPlay         allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     XF86AudioPause        allow-when-locked=true { spawn-sh "playerctl pause"; }
@@ -33,6 +33,8 @@ binds {
     Mod+Right            { focus-column-right; }
     Mod+Down             { focus-window-down; }
     Mod+Up               { focus-window-up; }
+    Mod+Alt+Left         { focus-monitor-left; }
+    Mod+Alt+Right        { focus-monitor-right; }
     Mod+Ctrl+Left        { move-column-left; }
     Mod+Ctrl+Right       { move-column-right; }
     Mod+Ctrl+Down        { move-window-down; }
