@@ -1,9 +1,11 @@
 #!/bin/bash
-niri msg action do-screen-transition --delay-ms 300
+
+# Prevent duplicate locks (ext-session-lock-v1 only allows one client)
+pgrep -x swaylock && exit 0
+
 swaylock \
   --clock \
   --screenshots \
-  --daemonize \
   --ignore-empty-password \
   --font "Ubuntu Bold" \
   --indicator \

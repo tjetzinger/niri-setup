@@ -4,12 +4,17 @@
 input {
     keyboard {
         xkb {
-            layout "us"
+            layout "de"
+            variant "nodeadkeys"
+            options "caps:escape"
         }
     }
     touchpad {
         tap
         natural-scroll
+    }
+    mouse {
+        scroll-factor 0.93
     }
     focus-follows-mouse
 }
