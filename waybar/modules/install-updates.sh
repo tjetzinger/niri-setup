@@ -3,7 +3,7 @@ figlet "Updates" -f slant -w 44 -c
 echo ""
 sleep 0.1
 
-paru
+yay
 
 echo ""
 echo "[INFO] OK"

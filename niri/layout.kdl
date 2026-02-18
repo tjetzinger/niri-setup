@@ -2,13 +2,13 @@
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
-    gaps 14
+    gaps 7
     center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
-        proportion 1.0// Monitor configuration.
+        proportion 1.0
     }
     preset-window-heights {
         proportion 0.33333
@@ -18,8 +18,8 @@ layout {
     }
     default-column-width { proportion 0.5; }
     focus-ring {
-        width 2
-        active-color "#d8dadd"
+        width 1
+        active-color "#FF8C00"
         inactive-color "#0b0b0c"
     }
     border {

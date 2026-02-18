@@ -3,6 +3,9 @@
 # Prevent duplicate locks (ext-session-lock-v1 only allows one client)
 pgrep -x swaylock && exit 0
 
+# Background so swayidle can continue tracking idle for monitors-off/suspend.
+# Unlike --daemonize, this doesn't fork before acquiring the lock surface,
+# avoiding the grey screen race condition.
 swaylock \
   --clock \
   --screenshots \
@@ -27,4 +30,4 @@ swaylock \
   --bs-hl-color 3c3836ff \
   --inside-wrong-color c30505ff \
   --ring-wrong-color c30505ff \
-  --text-wrong-color ffffffff
+  --text-wrong-color ffffffff &

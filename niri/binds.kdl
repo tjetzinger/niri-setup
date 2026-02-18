@@ -1,8 +1,8 @@
 binds {
     // Applications
     Mod+Return      { spawn-sh "alacritty --config-file $NIRICONF/alacritty/default.toml"; }
-    Mod+Ctrl+Return { spawn-sh "fuzzel --config $NIRICONF/fuzzel/fuzzel.ini"; }
-    Mod+B           { spawn-sh "firefox"; }
+    Mod+Space       { spawn-sh "fuzzel --config $NIRICONF/fuzzel/fuzzel.ini"; }
+    Mod+B           { spawn-sh "google-chrome-stable"; }
     Mod+E           { spawn-sh "nautilus"; }
     Mod+L           { spawn-sh "$NIRICONF/scripts/swaylock.sh"; }
     Mod+C           { spawn-sh "cliphist list | fuzzel --dmenu --config $NIRICONF/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
@@ -19,6 +19,7 @@ binds {
     XF86AudioRaiseVolume  allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01+"; }
     XF86AudioLowerVolume  allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01-"; }
     XF86AudioMute         allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioMicMute      allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
     XF86AudioPlay         allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     XF86AudioPause        allow-when-locked=true { spawn-sh "playerctl pause"; }
     XF86AudioNext         allow-when-locked=true { spawn-sh "playerctl next"; }
@@ -51,12 +52,23 @@ binds {
     Mod+BracketRight     { consume-or-expel-window-right; }
     Mod+Comma            { consume-window-into-column; }
     Mod+Period           { expel-window-from-column; }
+    Mod+Ctrl+C           { center-column; }
+    Mod+R                { switch-preset-column-width; }
 
     // Workspaces
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
+    Mod+1              { focus-workspace 1; }
+    Mod+2              { focus-workspace 2; }
+    Mod+3              { focus-workspace 3; }
+    Mod+4              { focus-workspace 4; }
+    Mod+5              { focus-workspace 5; }
+    Mod+6              { focus-workspace 6; }
+    Mod+7              { focus-workspace 7; }
+    Mod+8              { focus-workspace 8; }
+    Mod+9              { focus-workspace 9; }
     Mod+Ctrl+1         { move-column-to-workspace 1; }
     Mod+Ctrl+2         { move-column-to-workspace 2; }
     Mod+Ctrl+3         { move-column-to-workspace 3; }
@@ -70,7 +82,10 @@ binds {
     Mod+A              { toggle-overview; }
 
     // Screenshots
-    Print       { screenshot; }
+    Print       { screenshot-screen; }
     Ctrl+Print  { screenshot-window; }
-    Shift+Print { screenshot-screen; }
+    Shift+Print { screenshot; }
+
+    // Help
+    Mod+Shift+ssharp { show-hotkey-overlay; }
 }
