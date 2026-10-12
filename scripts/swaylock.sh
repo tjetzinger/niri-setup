@@ -3,6 +3,10 @@
 # Prevent duplicate locks (ext-session-lock-v1 only allows one client)
 pgrep -x swaylock && exit 0
 
+# Debounce: let USB/DRM settle after dock hotplug or resume to prevent
+# phantom keystrokes from triggering a false "wrong password" indicator
+sleep 3
+
 swaylock \
   --daemonize \
   --clock \

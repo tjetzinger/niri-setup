@@ -14,7 +14,7 @@ input {
         natural-scroll
     }
     mouse {
-        scroll-factor 0.93
+        natural-scroll
     }
     focus-follows-mouse
 }
